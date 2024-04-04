@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "allowJs": true, //Allow JavaScript files."
+    "lib": [
+      "DOM" /*s includes type definitions for the Document Object Model (DOM) API, */,
+      "DOM.Iterable" /* iterable objects, such as NodeList and HTMLCollection */,
+      "ESNext" /* ECMAScript features that are not yet standardized but are expected to be included in future versions of JavaScript. */
+    ],
+    "esModuleInterop": true, //interoperability between CommonJS modules (typically used in Node.js) and ES6 modules.
+    "noFallthroughCasesInSwitch": true, // TypeScript ensures that each case either has a break statement or ends the switch block
+    "skipLibCheck": true /* Skips type checking of all the declaration files (*.d.ts) */,
+    "strict": true, //TypeScript helps catch type-related errors at compile-time,
+    "noEmit": true, //prevents the compiler from emitting JavaScript files,
+    "allowSyntheticDefaultImports": true, //Even though utils.js doesn't export a default member, TypeScript allows the import using default import syntax
+    "module": "ESNext" /* ECMAScript features that are not yet standardized but are expected to be included in future versions of JavaScript. */,
+    "forceConsistentCasingInFileNames": true, //. This mismatch in casing can lead to issues, especially on case-sensitive filesystems.,
+    "resolveJsonModule": true, //allows you to directly import data.json as a module in your TypeScript code.
+    "moduleResolution": "Node", //, it will resolve the import statement according to Node.js's module resolution algorithm
+    "isolatedModules": true, // won't perform any type-checking or module resolution across files,
+    "jsx": "react-jsx" // TypeScript converts each JSX element into corresponding React.createElemen
+  },
+  "include": ["src"]
+}
